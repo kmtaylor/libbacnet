@@ -64,6 +64,7 @@ BAC_LIB_SRC = apdu.c \
 	      ringbuf.c \
 	      fifo.c \
 	      mstp.c \
+	      mstptext.c \
 	      crc.c \
 	      datalink.c
 

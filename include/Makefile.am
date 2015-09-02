@@ -1,7 +1,5 @@
-noinst_HEADERS = $(BAC_LIB_H) $(BAC_PORT_H) $(BAC_OBJECT_H)
+pkginclude_HEADERS = $(BAC_LIB_H) $(BAC_PORT_H) $(BAC_OBJECT_H)
 DISTCLEANFILES = $(BAC_LIB_H) $(BAC_PORT_H) $(BAC_OBJECT_H)
-
-pkginclude_HEADERS = apdu.h
 
 BAC_LIB_H = bits.h \
 	    apdu.h \
