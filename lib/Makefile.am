@@ -60,7 +60,12 @@ BAC_LIB_SRC = apdu.c \
 	      lighting.c \
 	      version.c \
 	      bvlc.c \
-	      bip.c
+	      bip.c \
+	      ringbuf.c \
+	      fifo.c \
+	      mstp.c \
+	      crc.c \
+	      datalink.c
 
 BAC_HANDLER_SRC = dlenv.c \
 		  txbuf.c \
@@ -141,7 +146,12 @@ BAC_OBJECT_SRC =  device.c \
 		  bacfile.c
 
 
-BAC_PORT_SRC = bip-init.c
+BAC_PORT_SRC = bip-init.c \
+	       arcnet.c \
+	       dlmstp.c \
+	       rs485.c \
+	       timer.c \
+	       ethernet.c
 
 $(BAC_LIB_SRC):
 	ln -s $(BAC_SRC)/$@ $@

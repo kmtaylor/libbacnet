@@ -65,7 +65,16 @@ BAC_LIB_H = bits.h \
 	    client.h \
 	    lso.h \
 	    mydata.h \
-	    sbuf.h
+	    sbuf.h \
+	    ringbuf.h \
+	    fifo.h \
+	    mstp.h \
+	    mstpdef.h \
+	    crc.h \
+	    mstptext.h \
+	    arcnet.h \
+	    dlmstp.h \
+	    ethernet.h
 
 BAC_OBJECT_H = device.h \
 	       ai.h \
@@ -88,7 +97,7 @@ BAC_OBJECT_H = device.h \
 	       nc.h \
 	       bacfile.h
 
-BAC_PORT_H = net.h timer.h
+BAC_PORT_H = net.h timer.h rs485.h dlmstp_linux.h
 
 $(BAC_LIB_H):
 	ln -s $(BAC_INCLUDE)/$@ $@
