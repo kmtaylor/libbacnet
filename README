@@ -1,0 +1,12 @@
+This repository can be installed within the $(top_srcdir) of the BacNet stack
+as found at:
+
+http://bacnet.sourceforge.net/
+
+It will symlink the files required to create a server library, and provide a
+standard pkg-config template.
+
+The purpose of this repository is to ease the use of the BacNet stack with
+standard POSIX projects.
+
+If the configure script is missing, just run bootstrap.sh
