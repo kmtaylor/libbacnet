@@ -1,3 +1,16 @@
+Index: demo/handler/dlenv.c
+===================================================================
+--- demo/handler/dlenv.c	(revision 2858)
++++ demo/handler/dlenv.c	(working copy)
+@@ -235,7 +235,7 @@
+     if (pEnv) {
+         datalink_set(pEnv);
+     } else {
+-        datalink_set(NULL);
++        datalink_set("bip");
+     }
+ #endif
+ #if defined(BACDL_BIP)
 Index: include/datalink.h
 ===================================================================
 --- include/datalink.h	(revision 2858)

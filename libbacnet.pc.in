@@ -7,4 +7,4 @@ Name: libbacnet
 Description: BacNet stack
 Version: @VERSION@
 Libs: -L${libdir} -lbacnet -lm
-Cflags: -I${includedir}
+Cflags: -I${includedir} -DBACDL_ALL
